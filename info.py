@@ -29,7 +29,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002770751008'))
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', ''))
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002770751008'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002256901984'))
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
@@ -39,8 +39,8 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mongodb7575:mkCNT8b2LZ
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "Store Book")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jisshu')
+FILES_DATABASE = environ.get('FILES_DATABASE', "files")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mydatabase')
 
 # Other Channel's
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002351324466'))
@@ -88,7 +88,7 @@ FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 IS_SEND_MOVIE_UPDATE = is_enabled('IS_SEND_MOVIE_UPDATE', False) # Don't Change It ( If You Want To Turn It On Then Turn It On By Commands) We Suggest You To Make It Turn Off If You Are Indexing Files First Time.
-MAX_BTN = int(environ.get('MAX_BTN', '8'))
+MAX_BTN = int(environ.get('MAX_BTN', '10'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 1200))
 IMDB = is_enabled('IMDB', False)
