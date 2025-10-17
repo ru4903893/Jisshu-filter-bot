@@ -43,15 +43,15 @@ FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://uaunited2:98UtrRvr
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mydatabase')
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002351324466'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002881663801'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002351324466') 
+request_channel = environ.get('REQUEST_CHANNEL', '-1002881663801') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002351324466')) 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002881663801')) 
 
 # Added Link Here Not Id 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/movie_search_group1')
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/mysupportgroupsk')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/mysupportgroupsk')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movie_search_group1')
 
 # Verification
 IS_VERIFY = is_enabled('IS_VERIFY', False)
